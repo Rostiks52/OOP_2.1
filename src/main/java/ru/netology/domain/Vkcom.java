@@ -1,47 +1,60 @@
 package ru.netology.domain;
 
 public class Vkcom {
-    private String logo;
-    private String groupName;
-    private String publicationTime;
-    private String interplay;
+    private int noteId;
+    private int OwnerId;
+    private int fromId;
+    private int date;
     private String text;
-    private String image;
-    private String like;
-    private String comments;
-    private String reposts;
-    private String views;
+    private int replyOwnerId;
+    private int replyPostId;
+    private boolean friendsOnly;
+    private CommentsInfo commentsInfo;
+    private Copyright copyright;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
+    private String postType;
+    private Geo geo;
+    private int signerId;
+    private boolean canPin;
+    private boolean canDelete;
+    private boolean canEdit;
+    private boolean isPinned;
+    private boolean markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
 
-    public String getLogo() {
-        return logo;
+    public int getNoteId() {
+        return noteId;
     }
 
-    public void setLogo(String logo) {
-        this.logo = logo;
+    public void setNoteId(int noteId) {
+        this.noteId = noteId;
     }
 
-    public String getGroupName() {
-        return groupName;
+    public int getOwnerId() {
+        return OwnerId;
     }
 
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
+    public void setOwnerId(int ownerId) {
+        OwnerId = ownerId;
     }
 
-    public String getPublicationTime() {
-        return publicationTime;
+    public int getFromId() {
+        return fromId;
     }
 
-    public void setPublicationTime(String publicationTime) {
-        this.publicationTime = publicationTime;
+    public void setFromId(int fromId) {
+        this.fromId = fromId;
     }
 
-    public String getInterplay() {
-        return interplay;
+    public int getDate() {
+        return date;
     }
 
-    public void setInterplay(String interplay) {
-        this.interplay = interplay;
+    public void setDate(int date) {
+        this.date = date;
     }
 
     public String getText() {
@@ -52,44 +65,109 @@ public class Vkcom {
         this.text = text;
     }
 
-    public String getImage() {
-        return image;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
     }
 
-    public String getLike() {
-        return like;
+    public int getReplyPostId() {
+        return replyPostId;
     }
 
-    public void setLike(String like) {
-        this.like = like;
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
     }
 
-    public String getComments() {
-        return comments;
+    public boolean isFriendsOnly() {
+        return friendsOnly;
     }
 
-    public void setComments(String comments) {
-        this.comments = comments;
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
     }
 
-    public String getReposts() {
-        return reposts;
+    public String getPostType() {
+        return postType;
     }
 
-    public void setReposts(String reposts) {
-        this.reposts = reposts;
+    public void setPostType(String postType) {
+        this.postType = postType;
     }
 
-    public String getViews() {
-        return views;
+    public Geo getGeo() {
+        return geo;
     }
 
-    public void setViews(String views) {
-        this.views = views;
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public boolean isCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(boolean canPin) {
+        this.canPin = canPin;
+    }
+
+    public boolean isCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(boolean canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public boolean isCanEdit() {
+        return canEdit;
+    }
+
+    public void setCanEdit(boolean canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public boolean isPinned() {
+        return isPinned;
+    }
+
+    public void setPinned(boolean pinned) {
+        isPinned = pinned;
+    }
+
+    public boolean isMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(boolean markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 }
+
 
