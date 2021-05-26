@@ -1,8 +1,8 @@
 package ru.netology.domain;
 
-public class Vkcom {
-    private int noteId;
-    private int OwnerId;
+public class Post {
+    private int Id;
+    private int ownerId;
     private int fromId;
     private int date;
     private String text;
